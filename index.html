@@ -7,7 +7,7 @@
 	<script src="dist/amazon-cognito-auth.min.js"></script>
 </head>
 
-<body onload="onLoad();">
+<body>
 	<ul>
 	  <li><a href="https://aws.amazon.com/cognito/" target="_blank"
            title="Go to AWS Cognito Console">Cognito Console</a></li>
@@ -196,6 +196,7 @@
 		// auth.useCodeGrantFlow();
 		return auth;
 	}
+	window.onload = onLoad;
 	</script>
 </body>
 </html>
